@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Cobrinha - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loginContainer">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Usuário" required>
+            <input type="password" id="password" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <p id="loginMessage"></p>
+    </div>
+
+    <div id="gameContainer" style="display: none;">
+        <h1>Jogo da Cobrinha</h1>
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <p id="bitcoinMessage"></p>
+        <p id="bitcoinBalance">Saldo de Bitcoins: 0 BTC</p>
+        <button id="withdrawButton">Sacar Bitcoins</button> <!-- Botão de saque -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
